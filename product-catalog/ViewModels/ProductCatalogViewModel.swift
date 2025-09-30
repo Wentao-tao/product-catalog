@@ -13,7 +13,7 @@ import SwiftUI
 class ProductCatalogViewModel: ObservableObject {
     // MARK: - Published Properties
     @Published var searchText: String = ""
-    @Published var filteredProducts: [Product] = []
+    var filteredProducts: [Product] = []
     @Published var filterState = FilterState()
     @Published var isFilterSheetPresented = false
     @Published var selectedProduct: Product?
